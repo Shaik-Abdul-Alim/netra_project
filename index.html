@@ -36,7 +36,76 @@
             </div>
             <!--part4-->
             <button id="dispatch-open" type="button">+DISPATCH MISSION</button>
-            <script src="script.js"></script>
+           
         </header>
+
+        <!--main content-->
+        <main class="page">
+
+            <section class="kpi-grid">
+                <artical class="kpi-card">
+                    <span>ROVERS ONLINE</span>
+                    <h2 id="online-count">6 / 6</h2>
+                    <p>Active rover units</p>
+                </artical>
+
+                <artical class="kpi-card">
+                    <span>AVERAGE BATTERY</span>
+                    <h2 id="online-count">76%</h2>
+                    <p>requries attention</p>
+                </artical>
+
+                 <artical class="kpi-card">
+                    <span>OPEN ALERTS</span>
+                    <h2 id="online-count">0</h2>
+                    <p> requries attention</p>
+                </artical>
+
+                <artical class="kpi-card">
+                    <span>DISTANCE TODAY</span>
+                    <h2 id="online-count">13.6km</h2>
+                    <p>total simulated distance</p>
+                </artical>
+            </section>
+
+            <section id="dashboard" class="section-heading">
+
+                <div>
+                    <h2>Fleet Overview</h2>
+                    <p>Monitor all campus rovers activities.</p>
+                </div>
+                <span class="live-tag">• LIVE MONITORING</span>
+            </section>
+            </main>
+         <script src="script.js"></script>
+         <section class="panel" id="fleet">
+            <div class="panel-title">
+                <div>
+                    <h2>Fleet Management</h2>
+                    <p>Campus rover information</p>
+                </div>
+                <input type="search" id="rover-search" palaceholder="Search rover or zone...">
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rover ID</th>
+                            <th>Zone</th>
+                            <th>Status</th>
+                            <th>Battery</th>
+                            <th>Temperature</th>
+                            <th>Sonar Distance</th>
+                            <th>Speed</th>
+                        </tr>
+                    </thead>
+                    <!-- JavaScript dynamically inserts rover records here-->
+                     <tbody id="fleet-body"></tbody>
+                </table>
+                <p class="table-note">
+                    Select a rover row to view its sensor reading and telemetry history.
+                </p>
+            </div>
+         </section>
     </body>
 </html>
